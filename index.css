@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;    
+    font-family: sans-serif;
+}
+p{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: #e9ebee;
+}
+.container{
+    height: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    /*width: 1200px;*/
+}
+.container-2{
+    height: 100%;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.container-2 p{
+    display: inline-block;
+}
+
+.container-2 button{
+    float:right;
+     background-color: #E2362E;
+    border: 1px solid;
+    border-radius: 3px;
+    box-shadow: 0 0 5px -1px #333;
+    color: #fff;
+    cursor: pointer;
+    padding: 2px;
+    width: 100px;
+    
+}
+.forms{
+    background: rgba(31, 33, 40, 0.88);
+    box-shadow: 0 0 5px 0px #333;
+    height: 145px;
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+    top: 30% !important;
+    width: 500px;
+}
+.register input, .login input{
+    border: 0;
+    border-radius: 3px;
+    height: 30px;
+    margin: 3px auto;
+    padding: 5px;
+    width: 100%;
+}
+.register button, .login button{
+    background-color: #E2362E;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 5px -1px #333;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    margin: 10px auto;
+    padding: 2px;
+    width: 50%;
+}
+.register div, .login div{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    float: left;
+    height: 30px;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
+    width: 50%;
+}
+.register div a:link, .register div a:visited, .register div a:hover, .register div a:active, .login div a:link, .login div a:visited, .login div a:hover, .login div a:active{
+    color: rgba(255,255,255,0.6) !important;
+}
+
+.login{
+    display:none;
+    left: 16px;
+    position: absolute;
+    top: 15px;
+    width: 466px;
+}
+
+.middle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.header{
+    background: rgba(31, 33, 40, 0.88);
+    box-shadow: 0 0 5px 0px #333;
+    color: #fff;
+    left: 0;
+    height: 35px;
+    padding: 9px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.has-header{
+    margin-top: 35px;
+}
+.statusbox{
+    margin: 0 auto;
+    padding:3px;
+    width: 500px;
+}
+.statusbox textarea{
+    box-shadow: 0 1px 4px -1px #333;
+    height: 80px;
+    padding: 5px;
+    width: 100%;
+}
+.statusbox input{
+    box-shadow: 0 1px 4px -1px #333;
+    margin-bottom:10px;
+    width:100%;
+}
+.statusbox button{
+    background-color: rgba(31, 33, 40, 0.88);
+    border:0;
+    box-shadow: 0 1px 4px -1px #333;
+    color: #fff;
+    float: right;
+    height: 25px;
+    margin: 5px 0;
+    width: 100px;
+}
+.post{
+    float: left;
+    margin: 50px 10px 50px 0;
+    width: 490px;
+}
+.post .post-single{
+    border-radius:3px;
+    box-shadow: 0 1px 4px -1px #333;
+    background:#FFF;
+    margin: 5px 0;
+    padding: 10px 5px;
+    position: relative;
+}
+.post .post-single .post-title{
+    display:inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 0;
+    
+}
+
+.post-single span{
+    color:grey;
+    font-size:12px;
+}
+.post .post-single .post-content{
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.post-single a{
+    float: right;
+    position: relative;
+    padding: 3px;
+    margin-top: -42px;
+}
+
+
+.comment{
+    display: none;
+    box-shadow: 0 1px 4px -1px #333;
+    float: left;
+    margin: 20px 0 50px 10px;
+    padding: 10px 5px;
+    position: relative;
+    width: 490px;
+}
+.comment .commentbox textarea{
+    box-shadow: 0 1px 4px -1px #333;
+    height: 80px;
+    margin: 2.5%;
+    padding: 5px;
+    width: 95%;
+}
+.comment .commentbox button{
+    background-color: rgba(31, 33, 40, 0.88);
+    border:0;
+    box-shadow: 0 1px 4px -1px #333;
+    color: #fff;
+    float: right;
+    height: 25px;
+    margin: 5px 13px;
+    width: 100px;
+}
+
+.comment-prev{
+    margin-top:45px;
+    padding:20px;
+}
+
+.comment-content{
+    font-size:12px;
+}
+
+.comment-content span{
+    font-size:13px;
+    font-weight:bold;
+}

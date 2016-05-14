@@ -1,0 +1,18 @@
+<template name="landing">
+    <div class="container">
+        {{#if currentUser}}
+            <div class="dashboard">
+                {{> dashboard}}
+            </div>
+        {{else}}
+           <div class="forms middle">
+               <div class="register">
+                {{> register}}
+            </div>
+            <div class="login">
+                {{> login}}
+            </div>
+           </div>
+        {{/if}}
+    </div>
+</template>

@@ -1,0 +1,16 @@
+<template name="comments">
+    <div class="commentbox">
+                <textarea placeholder="Your comment here..."></textarea>
+                <button type="submit">Submit</button>
+    </div>
+            
+            <div class="comment-prev">
+                {{#each comments}}
+                    
+                    <div class="comment-content">
+                        <span>
+                            {{author}}
+                        </span>{{comment}}</div>
+                {{/each}}
+            </div>
+</template>

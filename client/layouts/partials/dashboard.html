@@ -1,0 +1,40 @@
+<template name="dashboard">
+    
+    <header class="header">
+        <div class="container-2">
+            <p>You are now logged in as {{user}}.</p>
+             <button class="logout">Logout</button>
+        </div>
+    </header>
+    
+    <div class="container has-header">
+        <div class="statusbox">
+            <input id="post-title" type="text" placeholder=" Post Title..">
+            <textarea id="post-content" placeholder="Your text here..."></textarea>
+            <button type="submit">Post</button>
+        </div>
+        
+    
+    
+        <div class="post">
+            {{#each feeds}}
+            
+            <div class="post-single">
+                <div class="post-title">{{title}}</div>
+                <span>By {{author}}</span>
+                <div class="post-content">{{content}}</div>
+                <a id={{_id}}><i id={{_id}} class="fa fa-comment"></i></a>
+            </div>
+            
+            {{/each}}    
+        </div>
+        
+        <div class="comment">
+            {{> comments}}
+        </div>
+        
+    
+    
+       
+    </div>
+</template>
